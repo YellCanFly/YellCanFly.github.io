@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Kexiang Huang</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Kexiang Huang</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html"     class="nav-link">Projects</a>
+      <a href="cv.html"           class="nav-link">CV</a>
+      <a href="gallery.html"      class="nav-link">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <h1 class="section-title" style="margin-top:0;">Gallery</h1>
+  <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:32px;">
+    Snapshots from conferences, research life, travels, and beyond.
+  </p>
+
+  <!-- ── Conference & Research ─────────────── -->
+  <h2 class="section-title">Conferences &amp; Research</h2>
+  <div class="gallery-grid">
+
+    <!-- ── HOW TO ADD A PHOTO:
+         1. Copy an image to images/ folder
+         2. Replace the .gallery-placeholder div with:
+            <img src="images/your-photo.jpg" alt="Description">
+         3. Set data-src on the .gallery-item to the image path for lightbox
+         ── -->
+
+    <div class="gallery-item" data-src="images/conf1.jpg">
+      <div class="gallery-placeholder">📸</div>
+      <div class="gallery-caption">CVPR 2026 — Seattle, WA</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/conf2.jpg">
+      <div class="gallery-placeholder">🎤</div>
+      <div class="gallery-caption">Presenting at NeurIPS 2025</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/conf3.jpg">
+      <div class="gallery-placeholder">🤝</div>
+      <div class="gallery-caption">Workshop poster session</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/conf4.jpg">
+      <div class="gallery-placeholder">🏛️</div>
+      <div class="gallery-caption">ICML 2025 — Vienna</div>
+    </div>
+
+  </div>
+
+  <!-- ── Lab & Campus ──────────────────────── -->
+  <h2 class="section-title">Lab &amp; Campus</h2>
+  <div class="gallery-grid">
+
+    <div class="gallery-item" data-src="images/lab1.jpg">
+      <div class="gallery-placeholder">🔬</div>
+      <div class="gallery-caption">Lab group photo, Fall 2025</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/lab2.jpg">
+      <div class="gallery-placeholder">💻</div>
+      <div class="gallery-caption">Late nights in the lab</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/campus1.jpg">
+      <div class="gallery-placeholder">🎓</div>
+      <div class="gallery-caption">Campus in autumn</div>
+    </div>
+
+  </div>
+
+  <!-- ── Travel & Life ─────────────────────── -->
+  <h2 class="section-title">Travel &amp; Life</h2>
+  <div class="gallery-grid">
+
+    <div class="gallery-item" data-src="images/travel1.jpg">
+      <div class="gallery-placeholder">✈️</div>
+      <div class="gallery-caption">Summer in [City]</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/travel2.jpg">
+      <div class="gallery-placeholder">🏔️</div>
+      <div class="gallery-caption">Hiking in [Place]</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/life1.jpg">
+      <div class="gallery-placeholder">📷</div>
+      <div class="gallery-caption">Photo caption here</div>
+    </div>
+
+    <div class="gallery-item" data-src="images/life2.jpg">
+      <div class="gallery-placeholder">🌅</div>
+      <div class="gallery-caption">Photo caption here</div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Lightbox ────────────────────────────── -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&#x2715;</span>
+  <img id="lightbox-img" src="" alt="Enlarged photo">
+</div>
+
+<footer>
+  <p>© <span id="year"></span> Kexiang Huang.</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
