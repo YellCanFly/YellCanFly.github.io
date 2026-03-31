@@ -4,38 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kexiang Huang — Homepage</title>
+  <meta name="description" content="Kexiang Huang — PhD Candidate at BIT &amp; UPC, researching Crowd Simulation, VR, and HCI.">
+  <meta property="og:title" content="Kexiang Huang — Homepage">
+  <meta property="og:description" content="PhD Candidate at BIT &amp; UPC, researching Crowd Simulation, Virtual Reality, and Human-Computer Interaction.">
+  <meta property="og:image" content="https://yellcanfly.github.io/files/index/personal_pic.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yellcanfly.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='10' fill='%232c3e50'/%3E%3Ctext y='75' x='50' text-anchor='middle' font-size='55' font-weight='bold' fill='white' font-family='sans-serif'%3EKH%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────── -->
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">Kexiang Huang</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html"        class="nav-link">Home</a>
-      <a href="publications.html" class="nav-link">Publications</a>
-      <a href="projects.html"     class="nav-link">Projects</a>
-      <a href="cv.html"           class="nav-link">CV</a>
-      <a href="gallery.html"      class="nav-link">Gallery</a>
-    </div>
-  </div>
-</nav>
+<!-- ── Navigation (edit js/nav.js to change all pages at once) ── -->
+<script src="js/nav.js"></script>
 
 <!-- ── Main content ───────────────────────── -->
 <main>
 
   <!-- Profile Hero -->
   <section class="profile-hero">
-    <!-- Replace the placeholder below with an <img> tag once you have a photo:
-         <img src="images/profile.jpg" alt="Your Name" class="profile-photo"> -->
-    <div class="profile-photo-placeholder" title="Replace with your photo">
-      <!-- Replace with: <img src="images/profile.jpg" alt="Kexiang Huang" class="profile-photo"> -->
-      KH
-    </div>
+    <img src="files/index/personal_pic.jpg" alt="Kexiang Huang" class="profile-photo">
 
     <div class="profile-info">
       <h1>Kexiang Huang</h1>
@@ -53,7 +41,7 @@
           </svg>
           hwangkx@gmail.com
         </a>
-        <a href="https://scholar.google.com/citations?user=77A6XHMAAAAJ" target="_blank" class="contact-link">
+        <a href="https://scholar.google.com/citations?user=77A6XHMAAAAJ" target="_blank" rel="noopener noreferrer" class="contact-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="8" r="4"/><path d="M2 20c0-4 4-7 10-7s10 3 10 7"/>
           </svg>
@@ -152,7 +140,7 @@
             <span class="pub-tag ccfa">CCF A</span>
           </div>
           <div class="pub-links">
-            <a href="files/publications/pdf/_IEEEVR26__VR_Crowd_Rule_breaking_Imitation.pdf" target="_blank" class="pub-link">Paper</a>
+            <a href="files/publications/pdf/_IEEEVR26__VR_Crowd_Rule_breaking_Imitation.pdf" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
           </div>
         </div>
       </li>
@@ -171,7 +159,7 @@
             <span class="pub-tag preprint">Preprint</span>
           </div>
           <div class="pub-links">
-            <a href="files/publications/pdf/Multi_Perception_Crowd_RL__TVCG_.pdf" target="_blank" class="pub-link">Paper</a>
+            <a href="files/publications/pdf/Multi_Perception_Crowd_RL__TVCG_.pdf" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
           </div>
         </div>
       </li>
@@ -191,7 +179,7 @@
             <span class="pub-tag q2">SCI Q2</span>
           </div>
           <div class="pub-links">
-            <a href="files/publications/pdf/Choreographing%20multi-degree%20of%20freedom%20behaviors%20in%20large-scale%20crowd%20simulations.pdf" target="_blank" class="pub-link">Paper</a>
+            <a href="files/publications/pdf/Choreographing%20multi-degree%20of%20freedom%20behaviors%20in%20large-scale%20crowd%20simulations.pdf" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
           </div>
         </div>
       </li>
@@ -211,6 +199,6 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

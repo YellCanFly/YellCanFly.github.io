@@ -2,17 +2,6 @@
    Personal Academic Homepage — Main JS
    ============================================ */
 
-// ── Active nav link ─────────────────────────
-(function setActiveNav() {
-  const page = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('a.nav-link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === page || (page === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
-})();
-
 // ── Mobile hamburger ─────────────────────────
 const toggle = document.getElementById('nav-toggle');
 const navLinks = document.getElementById('nav-links');
