@@ -25,7 +25,9 @@
 
     const linksHtml = pub.links.map(l => {
       const ext = l.href !== '#' ? ' target="_blank" rel="noopener noreferrer"' : '';
-      return `<a href="${l.href}"${ext} class="pub-link">${l.text}</a>`;
+      const i18n = l.text === 'Paper' ? ' data-i18n="publication.link.paper"' : '';
+      const text = l.text === 'Paper' ? I18N.t('publication.link.paper') : l.text;
+      return `<a href="${l.href}"${ext} class="pub-link"${i18n}>${text}</a>`;
     }).join('');
 
     li.innerHTML =
@@ -69,8 +71,12 @@
     const firstCount = PUBLICATIONS.filter(p => p.type.includes('first')).length;
     const allBtn   = document.querySelector('[data-filter="all"]');
     const firstBtn = document.querySelector('[data-filter="first"]');
-    if (allBtn)   allBtn.textContent   = `All (${total})`;
-    if (firstBtn) firstBtn.textContent = `First Author (${firstCount})`;
+    function updateFilterCounts() {
+      if (allBtn) allBtn.textContent = I18N.t('publications.filter.all', { count: total });
+      if (firstBtn) firstBtn.textContent = I18N.t('publications.filter.first', { count: firstCount });
+    }
+    document.addEventListener('languagechange', updateFilterCounts);
+    updateFilterCounts();
   }
 
   // ── Selected publications page (index.html #selected-pub-container) ──────

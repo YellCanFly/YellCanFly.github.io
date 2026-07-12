@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kexiang Huang — Homepage</title>
-  <meta name="description" content="Kexiang Huang — PhD Candidate at BIT &amp; UPC, researching Crowd Simulation, VR, and HCI.">
+  <title data-i18n="home.meta.title">Kexiang Huang — Homepage</title>
+  <meta name="description" data-i18n-content="home.meta.description" content="Kexiang Huang — PhD in Crowd Simulation, Virtual Reality, and Human-Computer Interaction.">
   <meta property="og:title" content="Kexiang Huang — Homepage">
-  <meta property="og:description" content="PhD Candidate at BIT &amp; UPC, researching Crowd Simulation, Virtual Reality, and Human-Computer Interaction.">
+  <meta property="og:description" data-i18n-content="home.meta.description" content="Kexiang Huang — PhD in Crowd Simulation, Virtual Reality, and Human-Computer Interaction.">
   <meta property="og:image" content="https://yellcanfly.github.io/files/index/personal_pic.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yellcanfly.github.io/">
@@ -16,6 +16,7 @@
 <body>
 
 <!-- ── Navigation (edit js/nav.js to change all pages at once) ── -->
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 
 <!-- ── Main content ───────────────────────── -->
@@ -49,31 +50,31 @@
 
   <!-- Bio -->
   <section class="bio">
-    <h2 class="section-title">About Me</h2>
-    <p>
+    <h2 class="section-title" data-i18n="home.about.title">About Me</h2>
+    <p data-i18n="home.about.p1">
       I received my PhD from Beijing Institute of Technology (BIT) and was a
       visiting PhD student at Universitat Politècnica de Catalunya (UPC).
       In September 2026, I will join Beijing Film Academy as a Lecturer.
       My research focuses on Crowd Simulation, Virtual Reality, and
       Human-Computer Interaction.
     </p>
-    <p>
+    <p data-i18n="home.about.p2">
       I have a strong passion for building interactive virtual systems using
       Unreal Engine and Unity.
       A highlight of my work: in 2022, I developed a choreography and simulation system
       that supported the Opening Ceremony of the Beijing Winter Olympics.
     </p>
-    <p>
+    <p data-i18n="home.about.p3">
       Currently, I am particularly interested in intelligent multi-agent and crowd simulation systems
       driven by Reinforcement Learning and Large Language Models (LLMs),
       with the goal of creating simulations that are both technically rigorous and meaningfully impactful in the real world.
     </p>
     <div class="interest-tags">
-      <span class="interest-tag"><strong>Crowd Simulation</strong></span>
-      <span class="interest-tag"><strong>Reinforcement Learning</strong></span>
-      <span class="interest-tag"><strong>Human-Computer Interaction</strong></span>
-      <span class="interest-tag"><strong>Virtual Reality</strong></span>
-      <span class="interest-tag"><strong>Unreal/Unity Developer</strong></span>
+      <span class="interest-tag"><strong data-i18n="home.interest.crowd">Crowd Simulation</strong></span>
+      <span class="interest-tag"><strong data-i18n="home.interest.rl">Reinforcement Learning</strong></span>
+      <span class="interest-tag"><strong data-i18n="home.interest.hci">Human-Computer Interaction</strong></span>
+      <span class="interest-tag"><strong data-i18n="home.interest.vr">Virtual Reality</strong></span>
+      <span class="interest-tag"><strong data-i18n="home.interest.developer">Unreal/Unity Developer</strong></span>
     </div>
   </section>
 
@@ -81,33 +82,33 @@
 
   <!-- News -->
   <section>
-    <h2 class="section-title">News</h2>
+    <h2 class="section-title" data-i18n="home.news.title">News</h2>
     <ul class="news-list" id="news-list">
       <!-- ── ADD NEW NEWS ITEMS AT THE TOP ── -->
       <li>
-        <span class="news-date">May 28, 2026</span>
-        <span class="news-badge badge-award">Milestone</span>
-        <span>Successfully defended my <strong>Ph.D. dissertation</strong>.</span>
+        <span class="news-date" data-i18n="home.news.date.defense">May 28, 2026</span>
+        <span class="news-badge badge-award" data-i18n="home.news.badge.milestone">Milestone</span>
+        <span data-i18n="home.news.defense">Successfully defended my <strong>Ph.D. dissertation</strong>.</span>
       </li>
       <li>
-        <span class="news-date">Mar 23, 2026</span>
-        <span class="news-badge badge-talk">Talk</span>
-        <span>Presented our paper <em>Monkey See, Monkey Break? Imitation of Rule-Breaking in Virtual Crowds</em> at <strong>IEEE VR 2026</strong>, Daegu, Korea.</span>
+        <span class="news-date" data-i18n="home.news.date.vr">Mar 23, 2026</span>
+        <span class="news-badge badge-talk" data-i18n="home.news.badge.talk">Talk</span>
+        <span data-i18n="home.news.vr">Presented our paper <em>Monkey See, Monkey Break? Imitation of Rule-Breaking in Virtual Crowds</em> at <strong>IEEE VR 2026</strong>, Daegu, Korea.</span>
       </li>
       <li>
-        <span class="news-date">Nov 21, 2025</span>
-        <span class="news-badge badge-misc">Misc</span>
-        <span>Participated in the ending ceremony of the <strong>15th National Games of the People's Republic of China</strong>.</span>
+        <span class="news-date" data-i18n="home.news.date.games">Nov 21, 2025</span>
+        <span class="news-badge badge-misc" data-i18n="home.news.badge.misc">Misc</span>
+        <span data-i18n="home.news.games">Participated in the ending ceremony of the <strong>15th National Games of the People's Republic of China</strong>.</span>
       </li>
       <li>
-        <span class="news-date">Oct 31, 2024</span>
-        <span class="news-badge badge-misc">Misc</span>
-        <span>Joined the research group <strong>ViRVIG</strong> under the supervision of <strong>Prof. Nuria Pelechano</strong>.</span>
+        <span class="news-date" data-i18n="home.news.date.virvig">Oct 31, 2024</span>
+        <span class="news-badge badge-misc" data-i18n="home.news.badge.misc">Misc</span>
+        <span data-i18n="home.news.virvig">Joined the research group <strong>ViRVIG</strong> under the supervision of <strong>Prof. Nuria Pelechano</strong>.</span>
       </li>
       <li>
-        <span class="news-date">Feb 04, 2022</span>
-        <span class="news-badge badge-award">Misc</span>
-        <span>Participated in the <strong>Opening Ceremony of the Beijing 2022 Winter Olympics</strong>.</span>
+        <span class="news-date" data-i18n="home.news.date.olympics">Feb 04, 2022</span>
+        <span class="news-badge badge-award" data-i18n="home.news.badge.misc">Misc</span>
+        <span data-i18n="home.news.olympics">Participated in the <strong>Opening Ceremony of the Beijing 2022 Winter Olympics</strong>.</span>
       </li>
     </ul>
     <button class="show-more-btn" id="news-show-more">Show more ▼</button>
@@ -117,8 +118,8 @@
 
   <!-- Selected Publications -->
   <section>
-    <h2 class="section-title">Selected Publications</h2>
-    <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:16px;">
+    <h2 class="section-title" data-i18n="home.selected.title">Selected Publications</h2>
+    <p data-i18n="home.selected.note" style="font-size:0.88rem; color:var(--text-muted); margin-bottom:16px;">
       * Equal contribution &nbsp;† Corresponding author &nbsp;
       <a href="publications.html">→ Full list</a>
     </p>
@@ -126,7 +127,7 @@
     <!-- Rendered by js/pub-render.js from js/publications-data.js -->
     <div id="selected-pub-container"></div>
 
-    <a href="publications.html" class="btn btn-solid" style="margin-top:20px; display:inline-block;">
+    <a href="publications.html" class="btn btn-solid" data-i18n="home.selected.viewAll" style="margin-top:20px; display:inline-block;">
       View All Publications →
     </a>
   </section>
@@ -135,7 +136,7 @@
 
 <!-- ── Footer ─────────────────────────────── -->
 <footer>
-  <p>© <span id="year"></span> Kexiang Huang. Last updated July 2026.</p>
+  <p>© <span id="year"></span> <span data-i18n="common.copyright">Kexiang Huang.</span> <span data-i18n="home.footer.updated">Last updated July 2026.</span></p>
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

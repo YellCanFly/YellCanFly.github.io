@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications — Kexiang Huang</title>
-  <meta name="description" content="Full publication list of Kexiang Huang — Crowd Simulation, VR, and HCI research.">
+  <title data-i18n="publications.meta.title">Publications — Kexiang Huang</title>
+  <meta name="description" data-i18n-content="publications.meta.description" content="Full publication list of Kexiang Huang — Crowd Simulation, Virtual Reality, and Human-Computer Interaction research.">
   <meta property="og:title" content="Publications — Kexiang Huang">
-  <meta property="og:description" content="Full list of publications by Kexiang Huang, including journals and conference papers in Crowd Simulation and VR.">
+  <meta property="og:description" data-i18n-content="publications.meta.description" content="Full publication list of Kexiang Huang — Crowd Simulation, Virtual Reality, and Human-Computer Interaction research.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='10' fill='%232c3e50'/%3E%3Ctext y='75' x='50' text-anchor='middle' font-size='55' font-weight='bold' fill='white' font-family='sans-serif'%3EKH%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css" />
@@ -14,12 +14,13 @@
 <body>
 
 <!-- ── Navigation (edit js/nav.js to change all pages at once) ── -->
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 
 <main>
-  <h1 class="section-title" style="margin-top:0;">Publications</h1>
+  <h1 class="section-title" data-i18n="publications.title" style="margin-top:0;">Publications</h1>
 
-  <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">
+  <p data-i18n="publications.intro" style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">
     <strong><u>Underline</u></strong> = first / corresponding author. &nbsp;
     Full list on
     <a href="https://scholar.google.com/citations?user=77A6XHMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
@@ -29,8 +30,8 @@
   <div class="filter-bar">
     <button class="filter-btn active" data-filter="all">All (8)</button>
     <button class="filter-btn" data-filter="first">First Author (3)</button>
-    <button class="filter-btn" data-filter="journal">Journal</button>
-    <button class="filter-btn" data-filter="coauthor">Co-author</button>
+    <button class="filter-btn" data-filter="journal" data-i18n="publications.filter.journal">Journal</button>
+    <button class="filter-btn" data-filter="coauthor" data-i18n="publications.filter.coauthor">Co-author</button>
   </div>
 
   <!-- Rendered by js/pub-render.js from js/publications-data.js -->
@@ -39,7 +40,7 @@
 </main>
 
 <footer>
-  <p>© <span id="year"></span> Kexiang Huang.</p>
+  <p>© <span id="year"></span> <span data-i18n="common.copyright">Kexiang Huang.</span></p>
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

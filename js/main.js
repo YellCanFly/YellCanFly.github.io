@@ -49,15 +49,16 @@ function initShowMore(listId, btnId, visibleCount = 3) {
     });
     if (expanded) {
       list.classList.add('expanded');
-      btn.textContent = 'Show less ▲';
+      btn.textContent = I18N.t('common.showLess');
     } else {
       list.classList.remove('expanded');
-      btn.textContent = `Show more (${items.length - visibleCount} more) ▼`;
+      btn.textContent = I18N.t('common.showMore', { count: items.length - visibleCount });
     }
     if (items.length <= visibleCount) btn.style.display = 'none';
   }
 
   btn.addEventListener('click', () => { expanded = !expanded; render(); });
+  document.addEventListener('languagechange', render);
   render();
 }
 

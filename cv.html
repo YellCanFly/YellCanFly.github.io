@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV — Kexiang Huang</title>
-  <meta name="description" content="Curriculum Vitae of Kexiang Huang — PhD Candidate in Crowd Simulation and VR.">
+  <title data-i18n="cv.meta.title">CV — Kexiang Huang</title>
+  <meta name="description" data-i18n-content="cv.meta.description" content="Curriculum Vitae of Kexiang Huang — PhD in Crowd Simulation and Virtual Reality.">
   <meta property="og:title" content="CV — Kexiang Huang">
-  <meta property="og:description" content="Curriculum Vitae of Kexiang Huang, PhD Candidate at BIT and UPC.">
+  <meta property="og:description" data-i18n-content="cv.meta.description" content="Curriculum Vitae of Kexiang Huang — PhD in Crowd Simulation and Virtual Reality.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='10' fill='%232c3e50'/%3E%3Ctext y='75' x='50' text-anchor='middle' font-size='55' font-weight='bold' fill='white' font-family='sans-serif'%3EKH%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css" />
@@ -14,10 +14,11 @@
 <body>
 
 <!-- ── Navigation (edit js/nav.js to change all pages at once) ── -->
+<script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 
 <main>
-  <h1 class="section-title" style="margin-top:0;">Curriculum Vitae</h1>
+  <h1 class="section-title" data-i18n="cv.title" style="margin-top:0;">Curriculum Vitae</h1>
 
   <!-- Download button — replace href with actual PDF path -->
   <a href="files/cv.pdf" class="cv-download-btn" download>
@@ -26,28 +27,28 @@
       <polyline points="7 10 12 15 17 10"/>
       <line x1="12" y1="15" x2="12" y2="3"/>
     </svg>
-    Download PDF Version
+    <span data-i18n="cv.download">Download PDF Version</span>
   </a>
 
   <!-- ── Education ─────────────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Education</h2>
+    <h2 class="section-title" data-i18n="cv.education">Education</h2>
 
     <div class="cv-item">
-      <div class="cv-date">Present</div>
+      <div class="cv-date" data-i18n="cv.present">Present</div>
       <div class="cv-content">
-        <div class="cv-title">Visiting PhD Student</div>
+        <div class="cv-title" data-i18n="cv.visiting">Visiting PhD Student</div>
         <div class="cv-subtitle">Universitat Politècnica de Catalunya (UPC), Barcelona, Spain</div>
-        <div class="cv-detail">Research focus: Crowd Simulation, Virtual Reality, Human-Computer Interaction</div>
+        <div class="cv-detail" data-i18n="cv.researchFocus">Research focus: Crowd Simulation, Virtual Reality, Human-Computer Interaction</div>
       </div>
     </div>
 
     <div class="cv-item">
-      <div class="cv-date">— Present</div>
+      <div class="cv-date" data-i18n="cv.toPresent">— Present</div>
       <div class="cv-content">
-        <div class="cv-title">PhD Candidate</div>
+        <div class="cv-title" data-i18n="cv.phdCandidate">PhD Candidate</div>
         <div class="cv-subtitle">Beijing Institute of Technology (BIT), Beijing, China</div>
-        <div class="cv-detail">Research areas: Crowd Simulation, Virtual Reality, Human-Computer Interaction,
+        <div class="cv-detail" data-i18n="cv.researchAreas">Research areas: Crowd Simulation, Virtual Reality, Human-Computer Interaction,
           Intelligent Multi-Agent Systems (RL / LLM)</div>
       </div>
     </div>
@@ -56,14 +57,14 @@
 
   <!-- ── Research Experience ───────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Research Experience</h2>
+    <h2 class="section-title" data-i18n="cv.researchExperience">Research Experience</h2>
 
     <div class="cv-item">
-      <div class="cv-date">2022 – Present</div>
+      <div class="cv-date" data-i18n="cv.since2022">2022 – Present</div>
       <div class="cv-content">
-        <div class="cv-title">Graduate Research Assistant</div>
-        <div class="cv-subtitle">Lab Name, Your University</div>
-        <div class="cv-detail">
+        <div class="cv-title" data-i18n="cv.graduateAssistant">Graduate Research Assistant</div>
+        <div class="cv-subtitle" data-i18n="cv.labPlaceholder">Lab Name, Your University</div>
+        <div class="cv-detail" data-i18n="cv.researchAssistantDetail">
           Working on [research topic]. Developed [method/system] achieving state-of-the-art
           results on [benchmark].
         </div>
@@ -71,11 +72,11 @@
     </div>
 
     <div class="cv-item">
-      <div class="cv-date">Summer 2024</div>
+      <div class="cv-date" data-i18n="cv.summer2024">Summer 2024</div>
       <div class="cv-content">
-        <div class="cv-title">Research Intern</div>
-        <div class="cv-subtitle">Company / Research Lab, City</div>
-        <div class="cv-detail">
+        <div class="cv-title" data-i18n="cv.researchIntern">Research Intern</div>
+        <div class="cv-subtitle" data-i18n="cv.researchLabPlaceholder">Company / Research Lab, City</div>
+        <div class="cv-detail" data-i18n="cv.researchInternDetail">
           Mentored by [Name]. Worked on [project]. Led to [outcome/paper/product].
         </div>
       </div>
@@ -85,14 +86,14 @@
 
   <!-- ── Industry Experience ──────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Industry Experience</h2>
+    <h2 class="section-title" data-i18n="cv.industryExperience">Industry Experience</h2>
 
     <div class="cv-item">
-      <div class="cv-date">Summer 2023</div>
+      <div class="cv-date" data-i18n="cv.summer2023">Summer 2023</div>
       <div class="cv-content">
-        <div class="cv-title">Software Engineering Intern</div>
-        <div class="cv-subtitle">Company Name, City</div>
-        <div class="cv-detail">
+        <div class="cv-title" data-i18n="cv.softwareIntern">Software Engineering Intern</div>
+        <div class="cv-subtitle" data-i18n="cv.companyPlaceholder">Company Name, City</div>
+        <div class="cv-detail" data-i18n="cv.softwareInternDetail">
           Developed [feature/system] using [technologies]. Improved [metric] by X%.
         </div>
       </div>
@@ -102,30 +103,30 @@
 
   <!-- ── Honors & Awards ───────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Honors &amp; Awards</h2>
+    <h2 class="section-title" data-i18n="cv.honors">Honors &amp; Awards</h2>
 
     <div class="cv-item">
       <div class="cv-date">2025</div>
       <div class="cv-content">
-        <div class="cv-title">Best Paper Award</div>
-        <div class="cv-subtitle">NeurIPS 2025 Workshop on [Topic]</div>
+        <div class="cv-title" data-i18n="cv.bestPaper">Best Paper Award</div>
+        <div class="cv-subtitle" data-i18n="cv.workshopPlaceholder">NeurIPS 2025 Workshop on [Topic]</div>
       </div>
     </div>
 
     <div class="cv-item">
       <div class="cv-date">2022</div>
       <div class="cv-content">
-        <div class="cv-title">University Fellowship</div>
-        <div class="cv-subtitle">Your University Graduate School</div>
-        <div class="cv-detail">Full funding for first year of Ph.D.</div>
+        <div class="cv-title" data-i18n="cv.fellowship">University Fellowship</div>
+        <div class="cv-subtitle" data-i18n="cv.graduateSchoolPlaceholder">Your University Graduate School</div>
+        <div class="cv-detail" data-i18n="cv.fellowshipDetail">Full funding for first year of Ph.D.</div>
       </div>
     </div>
 
     <div class="cv-item">
       <div class="cv-date">2021</div>
       <div class="cv-content">
-        <div class="cv-title">National Scholarship / Competitive Fellowship</div>
-        <div class="cv-subtitle">Granting Organization</div>
+        <div class="cv-title" data-i18n="cv.scholarship">National Scholarship / Competitive Fellowship</div>
+        <div class="cv-subtitle" data-i18n="cv.grantingPlaceholder">Granting Organization</div>
       </div>
     </div>
 
@@ -133,8 +134,8 @@
 
   <!-- ── Publications ──────────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Publications</h2>
-    <p style="font-size:0.9rem; color:var(--text-muted);">
+    <h2 class="section-title" data-i18n="cv.publications">Publications</h2>
+    <p data-i18n="cv.publicationsIntro" style="font-size:0.9rem; color:var(--text-muted);">
       See <a href="publications.html">full publications page</a> for details and links.
     </p>
 
@@ -158,14 +159,14 @@
 
   <!-- ── Teaching ──────────────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Teaching</h2>
+    <h2 class="section-title" data-i18n="cv.teaching">Teaching</h2>
 
     <div class="cv-item">
-      <div class="cv-date">Fall 2024</div>
+      <div class="cv-date" data-i18n="cv.fall2024">Fall 2024</div>
       <div class="cv-content">
-        <div class="cv-title">Teaching Assistant — CS 101: Introduction to AI</div>
-        <div class="cv-subtitle">Your University</div>
-        <div class="cv-detail">Led weekly discussion sections, held office hours, graded assignments.</div>
+        <div class="cv-title" data-i18n="cv.teachingAssistant">Teaching Assistant — CS 101: Introduction to AI</div>
+        <div class="cv-subtitle" data-i18n="cv.universityPlaceholder">Your University</div>
+        <div class="cv-detail" data-i18n="cv.teachingDetail">Led weekly discussion sections, held office hours, graded assignments.</div>
       </div>
     </div>
 
@@ -173,12 +174,12 @@
 
   <!-- ── Service ───────────────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Professional Service</h2>
+    <h2 class="section-title" data-i18n="cv.service">Professional Service</h2>
 
     <div class="cv-item">
       <div class="cv-date">2024–2026</div>
       <div class="cv-content">
-        <div class="cv-title">Reviewer</div>
+        <div class="cv-title" data-i18n="cv.reviewer">Reviewer</div>
         <div class="cv-subtitle">
           CVPR, ICCV, NeurIPS, ICML, ICLR, ECCV, AAAI, ACM MM
         </div>
@@ -188,8 +189,8 @@
     <div class="cv-item">
       <div class="cv-date">2023–2024</div>
       <div class="cv-content">
-        <div class="cv-title">Volunteer / Student Organizer</div>
-        <div class="cv-subtitle">Conference / Workshop Name</div>
+        <div class="cv-title" data-i18n="cv.volunteer">Volunteer / Student Organizer</div>
+        <div class="cv-subtitle" data-i18n="cv.conferencePlaceholder">Conference / Workshop Name</div>
       </div>
     </div>
 
@@ -197,33 +198,33 @@
 
   <!-- ── Skills ────────────────────────────── -->
   <section class="cv-section">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title" data-i18n="cv.skills">Skills</h2>
 
     <div class="cv-item">
-      <div class="cv-date">Languages</div>
+      <div class="cv-date" data-i18n="cv.languages">Languages</div>
       <div class="cv-content">
         <div class="cv-detail">Python, C++, Java, JavaScript, MATLAB, LaTeX</div>
       </div>
     </div>
 
     <div class="cv-item">
-      <div class="cv-date">Frameworks</div>
+      <div class="cv-date" data-i18n="cv.frameworks">Frameworks</div>
       <div class="cv-content">
         <div class="cv-detail">PyTorch, TensorFlow, JAX, HuggingFace, OpenCV, scikit-learn</div>
       </div>
     </div>
 
     <div class="cv-item">
-      <div class="cv-date">Tools</div>
+      <div class="cv-date" data-i18n="cv.tools">Tools</div>
       <div class="cv-content">
         <div class="cv-detail">Git, Docker, SLURM, AWS, GCP, Linux</div>
       </div>
     </div>
 
     <div class="cv-item">
-      <div class="cv-date">Languages</div>
+      <div class="cv-date" data-i18n="cv.spokenLanguageLabel">Languages</div>
       <div class="cv-content">
-        <div class="cv-detail">English (Fluent), Chinese (Native), [Other language]</div>
+        <div class="cv-detail" data-i18n="cv.spokenLanguages">English (Fluent), Chinese (Native), [Other language]</div>
       </div>
     </div>
 
@@ -232,7 +233,7 @@
 </main>
 
 <footer>
-  <p>© <span id="year"></span> Kexiang Huang.</p>
+  <p>© <span id="year"></span> <span data-i18n="common.copyright">Kexiang Huang.</span></p>
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
