@@ -31,7 +31,8 @@ const PUBLICATIONS = [
       { text: "CCF A",  cls: "ccfa" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/IEEEVR26__VR_Crowd_Rule_breaking_Imitation.pdf" }
+      { text: "Paper", href: "files/publications/pdf/IEEEVR26__VR_Crowd_Rule_breaking_Imitation.pdf" },
+      { text: "DOI", href: "https://doi.org/10.1109/TVCG.2026.3679141" }
     ],
     selected: true
   },
@@ -46,10 +47,13 @@ const PUBLICATIONS = [
     type: ["first", "journal"],
     venue: "tvcg",
     tags: [
-      { text: "Preprint", cls: "preprint" }
+      { text: "IEEE Transactions on Visualization and Computer Graphics 2026", cls: "venue" },
+      { text: "SCI Q1", cls: "q1" },
+      { text: "CCF A",  cls: "ccfa" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/Multi_Perception_Crowd_RL__TVCG_.pdf" }
+      { text: "Paper", href: "files/publications/pdf/Multi_Perception_Crowd_RL__TVCG_.pdf" },
+      { text: "DOI", href: "https://doi.org/10.1109/TVCG.2026.3707675" }
     ],
     selected: true
   },
@@ -68,7 +72,8 @@ const PUBLICATIONS = [
       { text: "SCI Q2", cls: "q2" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/Generating%20natural%20pedestrian%20crowds%20by%20learning%20real%20crowd%20trajectories%20through%20a%20transformer-based.pdf" }
+      { text: "Paper", href: "files/publications/pdf/Generating%20natural%20pedestrian%20crowds%20by%20learning%20real%20crowd%20trajectories%20through%20a%20transformer-based.pdf" },
+      { text: "DOI", href: "https://doi.org/10.1007/s00371-024-03385-4" }
     ],
     selected: false
   },
@@ -87,7 +92,8 @@ const PUBLICATIONS = [
       { text: "EI", cls: "ei" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/%E7%BE%A4%E4%BD%93%E6%9C%BA%E6%A2%B0%E9%81%93%E5%85%B7%E8%A1%A8%E6%BC%94%E8%A1%8C%E4%B8%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F%E7%A0%94%E7%A9%B6.pdf" }
+      { text: "Paper", href: "files/publications/pdf/%E7%BE%A4%E4%BD%93%E6%9C%BA%E6%A2%B0%E9%81%93%E5%85%B7%E8%A1%A8%E6%BC%94%E8%A1%8C%E4%B8%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F%E7%A0%94%E7%A9%B6.pdf" },
+      { text: "DOI", href: "https://doi.org/10.16182/j.issn1004731x.joss.23-1065" }
     ],
     selected: false
   },
@@ -107,7 +113,8 @@ const PUBLICATIONS = [
       { text: "SCI Q2", cls: "q2" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/Choreographing%20multi-degree%20of%20freedom%20behaviors%20in%20large-scale%20crowd%20simulations.pdf" }
+      { text: "Paper", href: "files/publications/pdf/Choreographing%20multi-degree%20of%20freedom%20behaviors%20in%20large-scale%20crowd%20simulations.pdf" },
+      { text: "DOI", href: "https://doi.org/10.1016/j.cag.2024.104051" }
     ],
     selected: true
   },
@@ -126,7 +133,8 @@ const PUBLICATIONS = [
       { text: "SCI Q1", cls: "q1" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/Stylized%20crowd%20formation%20transformation%20through%20spatiotemporal%20adversarial%20learning.pdf" }
+      { text: "Paper", href: "files/publications/pdf/Stylized%20crowd%20formation%20transformation%20through%20spatiotemporal%20adversarial%20learning.pdf" },
+      { text: "DOI", href: "https://doi.org/10.1002/aisy.202300563" }
     ],
     selected: false
   },
@@ -146,7 +154,8 @@ const PUBLICATIONS = [
       { text: "SCI Q2", cls: "q2" }
     ],
     links: [
-      { text: "Paper", href: "files/publications/pdf/Enhanced%20crowd%20dynamics%20simulation%20with%20deep%20learning%20and%20improved%20social%20force%20model.pdf" }
+      { text: "Paper", href: "files/publications/pdf/Enhanced%20crowd%20dynamics%20simulation%20with%20deep%20learning%20and%20improved%20social%20force%20model.pdf" },
+      { text: "DOI", href: "https://doi.org/10.3390/electronics13050934" }
     ],
     selected: false
   },
@@ -164,7 +173,8 @@ const PUBLICATIONS = [
       { text: "Mobile Information Systems 2022", cls: "venue" }
     ],
     links: [
-      { text: "Paper", href: "#" }
+      { text: "Paper", href: "#" },
+      { text: "DOI", href: "https://doi.org/10.1155/2022/8091701" }
     ],
     selected: false
   }
