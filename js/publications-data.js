@@ -7,7 +7,7 @@
 // Fields:
 //   year     {number}    Publication year
 //   title    {string}    Paper title (HTML entities allowed, e.g. &amp;)
-//   authors  {Array}     [{name, isMe?}]  isMe:true highlights Huang K
+//   authors  {Array}     [{name, isMe?, corresponding?}]  isMe:true highlights Huang K
 //   type     {string[]}  Any of: "first", "coauthor", "journal", "conference"
 //   venue    {string}    Short venue key (used for data-venue filter attribute)
 //   tags     {Array}     [{text, cls}]  badge text + CSS class
@@ -16,6 +16,22 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const PUBLICATIONS = [
+  {
+    year: 2026,
+    title: "Becoming the Traveler: Reweaving a Thousand-Year Ink Landscape into an Immersive VR World",
+    authors: [
+      { name: "Huang Y" }, { name: "Xue T", corresponding: true },
+      { name: "Sun L" }, { name: "Huang K", isMe: true }
+    ],
+    type: ["coauthor", "conference"],
+    venue: "siggraph-asia",
+    tags: [
+      { text: "SIGGRAPH Asia 2026 Posters", cls: "venue" }
+    ],
+    links: [],
+    selected: false
+  },
+
   {
     year: 2026,
     title: "Monkey See, Monkey Break? Study of Rule-Breaking Imitation in Virtual Crowds",

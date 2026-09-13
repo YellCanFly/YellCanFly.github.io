@@ -16,7 +16,10 @@
     li.dataset.venue = pub.venue;
 
     const authorsHtml = pub.authors
-      .map(a => a.isMe ? `<span class="author-me">${a.name}</span>` : a.name)
+      .map(a => {
+        const name = a.isMe ? `<span class="author-me">${a.name}</span>` : a.name;
+        return name + (a.corresponding ? '<sup>†</sup>' : '');
+      })
       .join(', ');
 
     const tagsHtml = pub.tags
